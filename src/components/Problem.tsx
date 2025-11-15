@@ -2,8 +2,8 @@ import ProblemCard from "./ProblemCard";
 import IndiaImage from "../assets/India.png";
 export default () => {
   return (
-    <article className="mb-4 max-w-[1300px] mx-auto flex mt-[88px]">
-      <section className="w-[55%]">
+    <article className=" p-3 mb-4 max-w-[1300px] mx-auto flex mt-[88px] ">
+      <section className="lg:w-[55%]">
         <h2 className="font-medium text-sm mb-4 text-primary">The Problem</h2>
         <h3 className="text-[28px] font-medium mb-[26px] text-primary">
           The Workforce Skill Crisis in Bihar
@@ -16,7 +16,7 @@ export default () => {
           stable jobs. This forces our best talent to leave the state.
         </p>
 
-        <article className="grid grid-cols-2 gap-x-[25px] gap-y-[45px]  pr-20">
+        <article className="grid grid-cols-1 md:grid-cols-2 gap-x-[25px] gap-y-[45px]  lg:pr-20">
           <ProblemCard
             percentage="19.8%."
             problem="Bihar's youth unemployment rate"
@@ -39,7 +39,7 @@ export default () => {
           />
         </article>
       </section>
-      <section className="flex-1 mt-[60px]">
+      <section className="flex-1 mt-[60px] hidden lg:block">
         <img src={IndiaImage} />
       </section>
     </article>
